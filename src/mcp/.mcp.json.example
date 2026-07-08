@@ -4,7 +4,7 @@
       "command": "npx",
       "args": ["-y", "0gora-mcp"],
       "env": {
-        "OGORA_API": "https://0gora.temporalabs.com/api"
+        "OGORA_API": "https://0gora.tempor.ai/api"
       }
     }
   }

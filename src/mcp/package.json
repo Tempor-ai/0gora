@@ -26,14 +26,14 @@
     "ai-agents",
     "verifiable-inference"
   ],
-  "homepage": "https://0gora.temporalabs.com",
+  "homepage": "https://0gora.tempor.ai",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TemporaLabs/0gora.git",
+    "url": "git+https://github.com/Tempor-ai/0gora.git",
     "directory": "src/mcp"
   },
   "bugs": {
-    "url": "https://github.com/TemporaLabs/0gora/issues"
+    "url": "https://github.com/Tempor-ai/0gora/issues"
   },
   "license": "Apache-2.0",
   "engines": {

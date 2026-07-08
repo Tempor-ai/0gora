@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Live QA suite for a 0Gora deployment: per-model functional + grounding + read concurrency.
-# Usage:  BASE=https://0gora.temporalabs.com bash tests/qa.sh
+# Usage:  BASE=https://0gora.tempor.ai bash tests/qa.sh
 set -u
-BASE="${BASE:-https://0gora.temporalabs.com}"
+BASE="${BASE:-https://0gora.tempor.ai}"
 MODELS=("0GM-1.0-35B-A3B" "zai-org/GLM-5.1-FP8" "deepseek/deepseek-chat-v3-0324" "qwen3.7-max")
 pass=0; fail=0
 

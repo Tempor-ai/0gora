@@ -1,7 +1,7 @@
 # Changelog
 
 All notable changes to **0Gora** — the verifiable AI knowledge engine on 0G.
-Live: <https://0gora.temporalabs.com> · Built for the 0G Zero Cup.
+Live: <https://0gora.tempor.ai> · Built for the 0G Zero Cup.
 
 Versioning uses `0.x.0` minor bumps for substantial changes during the tournament,
 leading to a `1.0.0` final. Tags mark each release; the newest version is at the top.
@@ -134,7 +134,7 @@ leading to a `1.0.0` final. Tags mark each release; the newest version is at the
 ### Added
 - **MCP service** (`mcp/`) — the agent-facing side of the *agora*. Exposes `ask_0gora`,
   `search_0g_knowledge`, and `list_models` over **two transports**: a local **stdio** server (for Claude
-  Code et al.) and a **hosted remote endpoint** at `https://0gora.temporalabs.com/mcp` (Streamable HTTP —
+  Code et al.) and a **hosted remote endpoint** at `https://0gora.tempor.ai/mcp` (Streamable HTTP —
   agents connect by URL, no local install). Dual-surface: humans → web, agents → MCP, same TEE-verified brain.
 - Backend `/search` endpoint — raw hybrid retrieval (no LLM) powering the `search_0g_knowledge` tool.
 - **Apache-2.0 license** (`LICENSE` + `NOTICE`) — explicit patent grant + liability disclaimer so anyone can
@@ -171,7 +171,7 @@ leading to a `1.0.0` final. Tags mark each release; the newest version is at the
   (vector + BM25, fused with RRF), grounded answers with inline citations.
 - **Next.js chat UI** — model picker, citations, "Verified on 0G" badge.
 - Seeded the knowledge base with 0G blog + docs.
-- Deployed to <https://0gora.temporalabs.com> (nginx + Let's Encrypt TLS).
+- Deployed to <https://0gora.tempor.ai> (nginx + Let's Encrypt TLS).
 - Contribution **admin-locked** (public chat is read-only); submission-grade README; repository made public.
 
 ## [0.1.0] — 2026-06-20 — Scaffold

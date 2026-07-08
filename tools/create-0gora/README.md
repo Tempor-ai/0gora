@@ -8,7 +8,7 @@ npm create 0gora@latest my-agora
 npm create 0gora@latest my-agora -- --name "CoffeeGora" --topic "specialty coffee" --yes
 ```
 
-It shallow-clones the [0Gora](https://github.com/TemporaLabs/0gora) framework, then generates a configured
+It shallow-clones the [0Gora](https://github.com/Tempor-ai/0gora) framework, then generates a configured
 instance under `examples/<slug>/` — `0gora.config.json` (branding, example questions, corpus — **no
 secrets**), a `.env` (mock mode by default), and a compose overlay — so you can bring it straight up:
 

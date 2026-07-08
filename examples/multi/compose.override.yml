@@ -1,6 +1,6 @@
 # Co-hosted 0Gora — the 0G agora AND the ERC-8226 agora on ONE deployment.
 #
-# This is the production layout for 0gora.temporalabs.com: a single stack (one web,
+# This is the production layout for 0gora.tempor.ai: a single stack (one web,
 # one backend, one Qdrant, one 0G inference sidecar = one funded wallet) serving BOTH
 # agoras. The in-app switcher at /app flips between them; the backend routes retrieval
 # to each instance's own Qdrant collection (`0gora` vs `erc8226`), so their corpora

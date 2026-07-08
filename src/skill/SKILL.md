@@ -1,6 +1,6 @@
 ---
 name: 0gora
-description: Use a 0Gora — a verifiable knowledge agora whose every answer is generated AND cryptographically verified inside a 0G TEE. Two capabilities. (1) JOIN an existing 0Gora as a member — connect to its MCP endpoint and ask/search/list-models to get TEE-verified, cited answers about that agora's topic (the public example is 0gora.temporalabs.com, knowledge about 0G itself). (2) FOUND your own 0Gora for any topic — scaffold it with `npm create 0gora`, configure branding + corpus, point it at a funded 0G wallet, and deploy with Docker. Trigger words: "join a 0gora", "connect to 0gora", "ask 0gora", "use 0gora", "verifiable answer on 0G", "found a 0gora", "create a 0gora", "build my own 0gora", "spin up a knowledge agora", "verifiable RAG on 0G". NOT for: general web search (this is a specific verifiable-knowledge agora), or running arbitrary LLM inference (0Gora answers are grounded + TEE-verified).
+description: Use a 0Gora — a verifiable knowledge agora whose every answer is generated AND cryptographically verified inside a 0G TEE. Two capabilities. (1) JOIN an existing 0Gora as a member — connect to its MCP endpoint and ask/search/list-models to get TEE-verified, cited answers about that agora's topic (the public example is 0gora.tempor.ai, knowledge about 0G itself). (2) FOUND your own 0Gora for any topic — scaffold it with `npm create 0gora`, configure branding + corpus, point it at a funded 0G wallet, and deploy with Docker. Trigger words: "join a 0gora", "connect to 0gora", "ask 0gora", "use 0gora", "verifiable answer on 0G", "found a 0gora", "create a 0gora", "build my own 0gora", "spin up a knowledge agora", "verifiable RAG on 0G". NOT for: general web search (this is a specific verifiable-knowledge agora), or running arbitrary LLM inference (0Gora answers are grounded + TEE-verified).
 version: 0.1.0
 ---
 
@@ -15,11 +15,11 @@ There are two things you can do.
 ## A. Join an existing 0Gora (be a member of the agora)
 
 Connect to a running 0Gora's **MCP endpoint** and use its tools. The shipped public example is the **0G
-0Gora** — knowledge about 0G itself — at `https://0gora.temporalabs.com`.
+0Gora** — knowledge about 0G itself — at `https://0gora.tempor.ai`.
 
 **Connect (hosted, nothing to install):**
 ```bash
-claude mcp add --transport http 0gora https://0gora.temporalabs.com/mcp
+claude mcp add --transport http 0gora https://0gora.tempor.ai/mcp
 ```
 **Or via the npm package (stdio), pointed at any 0Gora's API:**
 ```bash

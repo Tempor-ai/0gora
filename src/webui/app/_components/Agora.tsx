@@ -64,7 +64,11 @@ function linkifyCitations(content: string, citations?: Citation[]): string {
   });
 }
 
-export default function Home() {
+// `pinned` locks this chat to one agora and hides the switcher — used by the per-agora
+// routes (/0g, /erc-8226) so each agora gets its own URL instead of an in-app dropdown.
+// Omitted (legacy) → the multi-agora switcher behaviour. Branding still stays the constant
+// 0Gora chrome whenever the deployment co-hosts several agoras (instances.length > 1).
+export default function Agora({ pinned, title }: { pinned?: string; title?: string }) {
   const [cfg, setCfg] = useState<InstanceConfig>(DEFAULT_CONFIG);
   const [models, setModels] = useState<string[]>([]);
   // Default to Auto: the backend picks the best model per query (manual pin still available).
@@ -76,7 +80,7 @@ export default function Home() {
   // id — so a standalone non-0g deployment doesn't assume "0g". The switcher hides for
   // a single-agora deployment.
   const [instances, setInstances] = useState<{ id: string; label: string }[]>([]);
-  const [instance, setInstance] = useState<string>("");
+  const [instance, setInstance] = useState<string>(pinned ?? "");
   const [messages, setMessages] = useState<Msg[]>([]);
   const [input, setInput] = useState("");
   const [busy, setBusy] = useState(false);
@@ -106,8 +110,9 @@ export default function Home() {
       .then((d) => {
         const list: { id: string; label: string }[] = d.instances || [];
         setInstances(list);
-        // Keep the current selection if it's valid; else snap to the server default.
-        if (list.length) {
+        // A pinned route owns its instance — never let the default-selection override it.
+        // Otherwise keep the current selection if valid; else snap to the server default.
+        if (!pinned && list.length) {
           setInstance((cur) => (list.some((i) => i.id === cur) ? cur : d.default || list[0].id));
         }
       })
@@ -262,12 +267,12 @@ export default function Home() {
   }
 
   return (
-    <div className="wrap">
+    <div className="wrap" data-agora={pinned || undefined}>
       <div className="header">
         <a className="logo" href="/" title="Back to 0Gora">{cfg.logo}</a>
         <span className="tag">{cfg.instanceLabel}</span>
         <span className="spacer" />
-        {instances.length > 1 && (
+        {!pinned && instances.length > 1 && (
           <label className="model-pick" title="Knowledge base — which 0Gora to ask">
             <span className="model-label">0Gora</span>
             <select value={instance} onChange={(e) => setInstance(e.target.value)}>
@@ -303,7 +308,7 @@ export default function Home() {
           <div className="hero-wash" />
           <div className="hero-scrim" />
           <div className="hero-inner">
-            <h1>{cfg.hero.title}</h1>
+            <h1>{title || cfg.hero.title}</h1>
             <p className="lead">{cfg.hero.lead}</p>
             <p className="sub">{cfg.hero.sub}</p>
             <div className="chips">
@@ -432,7 +437,7 @@ export default function Home() {
       </div>
 
       <div className="foot">
-        Built for agents too — connect over <a href="https://github.com/TemporaLabs/0gora/tree/main/src/mcp" target="_blank" rel="noreferrer">MCP</a>.
+        Built for agents too — connect over <a href="https://github.com/Tempor-ai/0gora/tree/main/src/mcp" target="_blank" rel="noreferrer">MCP</a>.
       </div>
 
       {showContribute && (

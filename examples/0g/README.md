@@ -2,7 +2,7 @@
 
 This folder is the **example that ships with the [0Gora](../../README.md) framework**: a
 verifiable knowledge agora about **0G itself**, live at
-[0gora.temporalabs.com/app](https://0gora.temporalabs.com/app).
+[0gora.tempor.ai/app](https://0gora.tempor.ai/app).
 
 It is **config, not code**. The framework lives in [`../../src`](../../src); this folder only
 declares what makes *this* instance about 0G. That's the whole point of 0Gora — to found your

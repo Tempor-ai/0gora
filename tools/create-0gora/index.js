@@ -15,7 +15,7 @@ import { createInterface } from "node:readline/promises";
 import { stdin, stdout, argv, exit } from "node:process";
 
 // Override to scaffold from a fork or a local path (also used in tests).
-const REPO = process.env.OGORA_REPO || "https://github.com/TemporaLabs/0gora.git";
+const REPO = process.env.OGORA_REPO || "https://github.com/Tempor-ai/0gora.git";
 
 function parseArgs(args) {
   const out = { _: [], yes: false, ref: "main" };
