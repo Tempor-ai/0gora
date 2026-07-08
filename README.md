@@ -1,7 +1,7 @@
 <h1 align="center">0Gora</h1>
 <p align="center"><em>Verifiable AI answers, computed on 0G — a knowledge engine you can trust.</em></p>
 <p align="center">
-  🌐 <a href="https://0gora.temporalabs.com"><b>Live demo: 0gora.temporalabs.com</b></a> &nbsp;·&nbsp; Built for the <a href="https://0g.ai/arena/zero-cup">0G Zero Cup</a> &nbsp;·&nbsp; <a href="CHANGELOG.md">Changelog</a>
+  🌐 <a href="https://0gora.tempor.ai"><b>Live demo: 0gora.tempor.ai</b></a> &nbsp;·&nbsp; Built for the <a href="https://0g.ai/arena/zero-cup">0G Zero Cup</a> &nbsp;·&nbsp; <a href="CHANGELOG.md">Changelog</a>
 </p>
 
 ---
@@ -121,7 +121,7 @@ originally for the 0G Zero Cup.**
 - [`tools/create-0gora/README.md`](tools/create-0gora/README.md) — scaffold your own agora (`npm create 0gora`).
 - [`src/skill/SKILL.md`](src/skill/SKILL.md) — the 0Gora agent skill (join an agora + found your own).
 
-Rendered docs: <https://0gora.temporalabs.com/docs>.
+Rendered docs: <https://0gora.tempor.ai/docs>.
 - [`CHANGELOG.md`](CHANGELOG.md) — version history.
 
 ## License

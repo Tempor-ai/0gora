@@ -6,13 +6,13 @@ const DESC =
   "0G + agora — a public square of knowledge. Create any town square, for anything, for anyone, human or AI. Built by the community, with answers you can trust.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://0gora.temporalabs.com"),
+  metadataBase: new URL("https://0gora.tempor.ai"),
   title: TITLE,
   description: DESC,
   openGraph: {
     title: TITLE,
     description: DESC,
-    url: "https://0gora.temporalabs.com",
+    url: "https://0gora.tempor.ai",
     siteName: "0Gora",
     images: [{ url: "/cover.jpg", width: 1600, height: 900 }],
     type: "website",

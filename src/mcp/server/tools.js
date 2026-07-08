@@ -4,7 +4,7 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
 
-export const API = (process.env.OGORA_API || "https://0gora.temporalabs.com/api").replace(/\/+$/, "");
+export const API = (process.env.OGORA_API || "https://0gora.tempor.ai/api").replace(/\/+$/, "");
 
 async function api(path, init) {
   const r = await fetch(`${API}${path}`, init);

@@ -1,4 +1,4 @@
-# Prod overlay: adds nginx (TLS for 0gora.temporalabs.com) + certbot in front of web.
+# Prod overlay: adds nginx (TLS for 0gora.tempor.ai) + certbot in front of web.
 # Usage: docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d
 name: 0gora
 

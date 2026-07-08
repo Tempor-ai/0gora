@@ -8,7 +8,7 @@
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { StreamableHTTPClientTransport } from "@modelcontextprotocol/sdk/client/streamableHttp.js";
 
-const url = new URL(process.env.MCP_URL || "https://0gora.temporalabs.com/mcp");
+const url = new URL(process.env.MCP_URL || "https://0gora.tempor.ai/mcp");
 const question = process.argv.slice(2).join(" ") || "What is 0G in one sentence?";
 
 const client = new Client({ name: "0gora-example-client", version: "1.0.0" });

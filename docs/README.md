@@ -22,17 +22,17 @@ cited, and **verified on 0G**.
 Two front doors, one verified brain.
 
 ### Humans — the web
-Open **[0gora.temporalabs.com/app](https://0gora.temporalabs.com/app)**. Pick a knowledge base from the
+Open **[0gora.tempor.ai/app](https://0gora.tempor.ai/app)**. Pick a knowledge base from the
 switcher (e.g. **0G** or **ERC-8226**) when more than one is hosted, then ask — by default 0Gora **auto-picks**
 the best 0G model for each query (a short *Auto routed to…* line shows which model answered and why); pin a
 specific model from the picker if you prefer. Each answer shows inline citations `[n]` and a **Verified on 0G**
 seal. If a question isn't in the corpus, 0Gora answers from general knowledge instead of guessing.
 
 ### Agents — MCP
-Connect over MCP (hosted, Streamable HTTP): `https://0gora.temporalabs.com/mcp`
+Connect over MCP (hosted, Streamable HTTP): `https://0gora.tempor.ai/mcp`
 
 ```bash
-claude mcp add --transport http 0gora https://0gora.temporalabs.com/mcp
+claude mcp add --transport http 0gora https://0gora.tempor.ai/mcp
 ```
 
 | Tool | Args | Returns |

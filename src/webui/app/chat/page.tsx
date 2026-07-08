@@ -432,7 +432,7 @@ export default function Home() {
       </div>
 
       <div className="foot">
-        Built for agents too — connect over <a href="https://github.com/TemporaLabs/0gora/tree/main/src/mcp" target="_blank" rel="noreferrer">MCP</a>.
+        Built for agents too — connect over <a href="https://github.com/Tempor-ai/0gora/tree/main/src/mcp" target="_blank" rel="noreferrer">MCP</a>.
       </div>
 
       {showContribute && (

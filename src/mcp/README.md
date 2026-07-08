@@ -4,7 +4,7 @@ Expose **0Gora's verifiable 0G knowledge** to AI agents over the [Model Context
 Protocol](https://modelcontextprotocol.io). Every answer is generated **and cryptographically verified on
 0G's decentralized TEE compute** — so an agent gets knowledge it can *trust*, not just text.
 
-This is the **agent-facing side of the agora**: humans use [`0gora.temporalabs.com`](https://0gora.temporalabs.com);
+This is the **agent-facing side of the agora**: humans use [`0gora.tempor.ai`](https://0gora.tempor.ai);
 agents use this MCP server. Same verifiable 0G brain.
 
 Published to npm as [`0gora-mcp`](https://www.npmjs.com/package/0gora-mcp) — run it with `npx`, no clone needed.
@@ -28,7 +28,7 @@ src/mcp/
 
 **Easiest — the hosted remote endpoint** (nothing to install):
 ```bash
-claude mcp add --transport http 0gora https://0gora.temporalabs.com/mcp
+claude mcp add --transport http 0gora https://0gora.tempor.ai/mcp
 ```
 
 **Or run the stdio server locally via the published package** (no clone):
@@ -42,7 +42,7 @@ or add to your project's `.mcp.json` (see [`.mcp.json.example`](.mcp.json.exampl
     "0gora": {
       "command": "npx",
       "args": ["-y", "0gora-mcp"],
-      "env": { "OGORA_API": "https://0gora.temporalabs.com/api" }
+      "env": { "OGORA_API": "https://0gora.tempor.ai/api" }
     }
   }
 }
@@ -60,7 +60,7 @@ npm run client:example -- "What is 0G Storage?"     # connects to the hosted end
 ```
 
 ## Config
-- `OGORA_API` — base API URL the server calls (default `https://0gora.temporalabs.com/api`). Point it at a
+- `OGORA_API` — base API URL the server calls (default `https://0gora.tempor.ai/api`). Point it at a
   local stack (`http://localhost:8000`) to run fully self-hosted.
 - `MCP_URL` — used by the example client / tests to pick the MCP endpoint.
 

@@ -10,7 +10,7 @@ import httpx
 
 from . import embed, vectorstore
 
-UA = {"User-Agent": "0Gora/0.1 (+https://0gora.temporalabs.com)"}
+UA = {"User-Agent": "0Gora/0.1 (+https://0gora.tempor.ai)"}
 
 
 def fetch(url: str) -> str:

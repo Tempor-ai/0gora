@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Live smoke test for a 0Gora deployment.
-# Usage:  BASE=https://0gora.temporalabs.com bash tests/smoke.sh
+# Usage:  BASE=https://0gora.tempor.ai bash tests/smoke.sh
 set -u
-BASE="${BASE:-https://0gora.temporalabs.com}"
+BASE="${BASE:-https://0gora.tempor.ai}"
 pass=0; fail=0
 ok()   { echo "  PASS: $1"; pass=$((pass+1)); }
 no()   { echo "  FAIL: $1"; fail=$((fail+1)); }

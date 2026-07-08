@@ -2,7 +2,7 @@ import Link from "next/link";
 
 // External link + internal routes: /docs is the in-site documentation, /app the chat
 // (which now hosts every agora this deployment serves, behind an in-app instance switcher).
-const GITHUB_URL = "https://github.com/TemporaLabs/0gora";
+const GITHUB_URL = "https://github.com/Tempor-ai/0gora";
 const DOCS_URL = "/docs";
 const APP_URL = "/app";
 
@@ -99,7 +99,7 @@ export default function Landing() {
             <h3>GitHub</h3>
             <p>Fork the repo, edit the config, deploy.</p>
             <a className="lp-cmd" href={GITHUB_URL} target="_blank" rel="noreferrer">
-              github.com/TemporaLabs/0gora ↗
+              github.com/Tempor-ai/0gora ↗
             </a>
           </div>
           <div className="lp-card">

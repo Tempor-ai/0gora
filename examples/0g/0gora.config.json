@@ -35,7 +35,7 @@
       { "url": "https://0g.ai/blog", "mode": "site", "max_pages": 30 },
       { "url": "https://docs.0g.ai", "mode": "site", "max_pages": 60 },
       { "url": "https://pc.0g.ai/models", "mode": "site", "max_pages": 20 },
-      { "url": "https://0gora.temporalabs.com/docs", "mode": "single", "max_pages": 1 }
+      { "url": "https://0gora.tempor.ai/docs", "mode": "single", "max_pages": 1 }
     ]
   },
 

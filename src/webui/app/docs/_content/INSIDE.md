@@ -2,7 +2,7 @@
 
 For developers: how 0Gora works, and how to run your own. The reusable framework lives in **`src/`**; a
 deployment is a small config folder under **`examples/`** that drives it (the shipped one is
-[`examples/0g/`](https://github.com/TemporaLabs/0gora/tree/main/examples/0g)). You found your own agora by
+[`examples/0g/`](https://github.com/Tempor-ai/0gora/tree/main/examples/0g)). You found your own agora by
 copying that folder and editing config — you never touch `src/`.
 
 0Gora's RAG design is **influenced by Onyx**; the implementation here is its own, built for this cup.
@@ -32,7 +32,7 @@ copying that folder and editing config — you never touch `src/`.
 services; an example's `compose.override.yml` layers its config on top:
 
 ```bash
-git clone https://github.com/TemporaLabs/0gora
+git clone https://github.com/Tempor-ai/0gora
 cd 0gora
 cp examples/0g/.env.example examples/0g/.env   # set your 0G wallet key (or keep ZEROG_MOCK=true)
 docker compose -f src/deploy/docker-compose.yml \
@@ -47,7 +47,7 @@ production.
 
 **Optional voice input.** Off by default. To enable: set `"voice": { "enabled": true }` in
 `0gora.config.json` and deploy with the `voice` compose profile (`--profile voice`, or
-`COMPOSE_PROFILES=voice` in `.env`). That runs the self-hosted [`src/stt`](https://github.com/TemporaLabs/0gora/tree/main/src/stt)
+`COMPOSE_PROFILES=voice` in `.env`). That runs the self-hosted [`src/stt`](https://github.com/Tempor-ai/0gora/tree/main/src/stt)
 service (`faster-whisper`) — the mic then transcribes on-box (works in any browser, audio never leaves the
 stack). Without the profile, nothing voice-related is built or run, so the default deploy carries zero footprint.
 
@@ -57,7 +57,7 @@ framework and generates a configured `examples/<slug>/` for you. (By hand: copy 
 framework, a brand-new verifiable agora.
 
 **Use one (agents):** `npx 0gora-mcp` connects any MCP agent to a running 0Gora, or drop in the
-[`src/skill/`](https://github.com/TemporaLabs/0gora/tree/main/src/skill) skill to teach an agent to join one
+[`src/skill/`](https://github.com/Tempor-ai/0gora/tree/main/src/skill) skill to teach an agent to join one
 and found its own.
 
 ---

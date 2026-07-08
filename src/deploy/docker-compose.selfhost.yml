@@ -1,0 +1,28 @@
+name: 0gora
+
+services:
+  zerog:
+    environment:
+      - ZEROG_MOCK=false
+
+  backend:
+    container_name: 0gora-backend
+    networks:
+      - default
+      - sites-net
+
+  web:
+    container_name: 0gora-web
+    networks:
+      - default
+      - sites-net
+
+  mcp:
+    container_name: 0gora-mcp
+    networks:
+      - default
+      - sites-net
+
+networks:
+  sites-net:
+    external: true

@@ -9,7 +9,7 @@ export const metadata = {
   description: "0Gora documentation: what it is, how to use it (web + MCP), architecture, and the verifiable 0G model catalog.",
 };
 
-const GITHUB_URL = "https://github.com/TemporaLabs/0gora";
+const GITHUB_URL = "https://github.com/Tempor-ai/0gora";
 
 const DOCS = [
   { slug: "overview", file: "README.md", title: "What is 0Gora?" },

@@ -1,6 +1,6 @@
 # Co-hosted 0Gora — 0G + ERC-8226 on one deployment
 
-This is the **production layout** for `0gora.temporalabs.com`: a single stack that serves **two agoras
+This is the **production layout** for `0gora.tempor.ai`: a single stack that serves **two agoras
 side by side** — the [0G agora](../0g/README.md) and the [ERC-8226 agora](../erc-8226/README.md) — behind
 one in-app switcher at **`/app`**. Both are powered by the **same funded 0G wallet**; the switcher (left of
 the model picker) flips the chat between them.
@@ -18,7 +18,7 @@ the model picker) flips the chat between them.
   (served at `/app` before the user touches the switcher, and to API/MCP callers that omit `instance`).
 
 ```
-                       0gora.temporalabs.com/app   ← in-app switcher: [ 0G | ERC-8226 ]
+                       0gora.tempor.ai/app   ← in-app switcher: [ 0G | ERC-8226 ]
                                   │ nginx
                     ┌─────────────┴─────────────┐
                   web                          backend ──► instance=0g ──► Qdrant: 0gora
