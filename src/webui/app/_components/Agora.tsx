@@ -68,7 +68,7 @@ function linkifyCitations(content: string, citations?: Citation[]): string {
 // routes (/0g, /erc-8226) so each agora gets its own URL instead of an in-app dropdown.
 // Omitted (legacy) → the multi-agora switcher behaviour. Branding still stays the constant
 // 0Gora chrome whenever the deployment co-hosts several agoras (instances.length > 1).
-export default function Agora({ pinned }: { pinned?: string }) {
+export default function Agora({ pinned, title }: { pinned?: string; title?: string }) {
   const [cfg, setCfg] = useState<InstanceConfig>(DEFAULT_CONFIG);
   const [models, setModels] = useState<string[]>([]);
   // Default to Auto: the backend picks the best model per query (manual pin still available).
@@ -308,7 +308,7 @@ export default function Agora({ pinned }: { pinned?: string }) {
           <div className="hero-wash" />
           <div className="hero-scrim" />
           <div className="hero-inner">
-            <h1>{cfg.hero.title}</h1>
+            <h1>{title || cfg.hero.title}</h1>
             <p className="lead">{cfg.hero.lead}</p>
             <p className="sub">{cfg.hero.sub}</p>
             <div className="chips">
