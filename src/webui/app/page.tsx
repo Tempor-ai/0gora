@@ -1,10 +1,12 @@
 import Link from "next/link";
 
-// External link + internal routes: /docs is the in-site documentation, /app the chat
-// (which now hosts every agora this deployment serves, behind an in-app instance switcher).
+// External links + internal routes: /docs is the in-site documentation; each agora now
+// has its OWN chat route (/0g, /erc-8226) instead of one combined /app switcher.
+// APP_URL is the default (0G) agora.
 const GITHUB_URL = "https://github.com/Tempor-ai/0gora";
 const DOCS_URL = "/docs";
-const APP_URL = "/app";
+const APP_URL = "/0g";
+const ERC_URL = "/erc-8226";
 
 export default function Landing() {
   return (
@@ -73,17 +75,23 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* ---------- try the 0G 0Gora ---------- */}
+      {/* ---------- try the 0Gora examples ---------- */}
       <section className="lp-try">
         <div className="lp-try-inner">
-          <span className="lp-eyebrow">Live example</span>
-          <h2 className="lp-h2">Try the 0G 0Gora</h2>
+          <span className="lp-eyebrow">Live examples</span>
+          <h2 className="lp-h2">Try these 0Gora examples</h2>
           <p className="lp-lead">
-            See one in action — a knowledge base about <b>0G itself</b>. Ask it anything.
+            Two verifiable knowledge bases, live — one about <b>0G itself</b>, one about{" "}
+            <b>ERC-8226</b>. Ask either one anything.
           </p>
-          <Link className="btn btn-primary btn-lg" href={APP_URL}>
-            Open the app <span className="arr">→</span>
-          </Link>
+          <div className="lp-try-btns">
+            <Link className="btn btn-primary btn-lg" href={APP_URL}>
+              Try 0G 0Gora <span className="arr">→</span>
+            </Link>
+            <Link className="btn btn-primary btn-lg" href={ERC_URL}>
+              Try ERC-8226 0Gora <span className="arr">→</span>
+            </Link>
+          </div>
         </div>
       </section>
 
