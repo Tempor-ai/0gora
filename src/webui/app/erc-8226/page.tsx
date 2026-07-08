@@ -9,5 +9,5 @@ export const metadata = {
 };
 
 export default function Page() {
-  return <Agora pinned="erc-8226" title="ERC-8226 0Gora" />;
+  return <Agora pinned="erc-8226" title="ERC-8226 ØGora" />;
 }
